@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="noindex,follow" />
+    <meta name="author" content="Jass Hospital" />
+    <meta name="description" content="jasshospital" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="#" />
+    <title>JASS Hospital</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="./assets/mediGo.png" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script src="index.js" defer></script>
+  </head>
+  <body>
+    <header id="home">
+      <nav class="section-container nav-container">
+        <div class="logo">
+          <img src="./assets/mediGo.png" alt="logo" />
+          <span>JASS Hospital</span>
+        </div>
+        <span id="nav-label" hidden>navigation</span>
+        <button
+          id="btn-open"
+          class="nav-open"
+          aria-expanded="false"
+          aria-labelledby="nav-label"
+        >
+          <i class="fa-solid fa-bars"></i>
+        </button>
+        <div
+          class="nav-link-container"
+          role="dialog"
+          aria-labelledby="nav-label"
+        >
+          <button class="nav-close" id="btn-close" aria-label="close">
+            <i class="fa-solid fa-xmark"></i>
+          </button>
+          <ul class="nav-links">
+            <li class="link"><a class="item-link" href="#home" data-scroll>Home</a></li>
+            <li class="link"><a class="item-link" href="#about" data-scroll>About Us</a></li>
+            <li class="link"><a class="item-link" href="#service" data-scroll>Services</a></li>
+            <li class="link"><a class="item-link" href="https://www.instagram.com/jasshospital_kolathur/?hl=en" data-scroll>Pages</a></li>
+            </ul>
+          <button class="btn contact-btn"><a href="tel:+919360785025" ></a>Contact Us</button>
+        </div>
+      </nav>
+      <div class="section-container header-container">
+        <div class="head-content">
+          <h1>Delivering an Outstanding Care Journey for Patients</h1>
+          <p>
+            JASS Hospital, Kolathur, specializing in Diabetology, Orthopedics, and Pediatrics. 
+            Our expert team delivers advanced care, from managing diabetes to treating bone 
+            and joint conditions, ensuring swift recovery and improved quality of life.
+            For children, our Pediatrics department offers compassionate care, 
+            focusing on their growth and well-being. With state-of-the-art facilities 
+            and a patient-first approach, we ensure accurate diagnoses and effective treatments.
+            At JASS Hospital, we are dedicated to providing comprehensive, 
+            high-quality medical services tailored to your needs.
+          </p>
+          <button class="btn"><a href="https://wa.me/919360785025"></a>
+            Get Services <i class="fa-solid fa-arrow-right"></i>
+          </button>
+        </div>
+        <div class="header-form">
+          <form action="https://formsubmit.co/info@jasshospital.in" method="POST">
+            <h4>Book Appointment</h4>
+        
+            <label for="firstName">First Name</label>
+            <input type="text" id="firstName" name="firstName" placeholder="First Name" required />
+        
+            <label for="lastName">Last Name</label>
+            <input type="text" id="lastName" name="lastName" placeholder="Last Name" required />
+        
+            <label for="phoneNo">Phone No.</label>
+            <input type="tel" id="phoneNo" name="phoneNo" placeholder="Phone No." pattern="[0-9]{10}" required />
+        
+            <label for="address">Your Address</label>
+            <input type="text" id="address" name="address" placeholder="Your Address" required />
+        
+            <!-- Hidden fields for additional customization -->
+            <input type="hidden" name="_subject" value="New Appointment Request">
+            <input type="hidden" name="_captcha" value="false"> <!-- Optional: Disable Captcha -->
+        
+            <button type="submit" class="btn form-btn">Book Now</button>
+          </form>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="section-container service-container" id="service">
+        <div class="service-head">
+          <div class="service-head-content">
+            <h2 class="section-header">Our Sevices</h2>
+            <p>
+              JASS Hospital offers expert care in Diabetology, Orthopedics, and Pediatrics. 
+              With advanced facilities and personalized treatments, 
+              we ensure comprehensive healthcare for diabetes management, 
+              bone health, and children’s well-being.
+            </p>
+          </div>
+          <button class="service-btn"><a href="https://wa.me/919360785025" ></a>Ask a Service</button>
+        </div>
+        <div class="service-grid">
+          <!--Card: 01-->
+          <div class="service-card">
+            <span><i class="fa-solid fa-vial-virus"></i></span>
+            <h4>Laboratory Test</h4>
+            <p>
+              Accurate Diagnostics, Swift Results: Experience top-notch
+              Laboratory Testing at our facility.
+            </p>
+            <a href="#">Learn More <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+          <!--Card: 02-->
+          <div class="service-card">
+            <span><i class="fa-solid fa-user-doctor"></i></span>
+            <h4>Specialized Doctors</h4>
+            <p>
+              Compassionate, expert care with convenient appointments for personalized treatments.
+            </p>
+            <a href="#">Learn More <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+          <!--Card: 03-->
+          <div class="service-card">
+            <span><i class="fa-solid fa-house"></i></span>
+            <h4>Home care</h4>
+            <p>
+              We provide medical services delivered at home, 
+              offering personalized care without the need for hospitalization.
+            </p>
+            <a href="#">Learn More <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-container about-container" id="about">
+        <div class="about-content">
+          <h2 class="section-header">About Us</h2>
+          <p>
+            Located in the heart of Kolathur, 
+            JASS Hospital is dedicated to providing 
+            exceptional healthcare services with a focus 
+            on patient well-being. Our team of expert doctors, 
+            specialists, and medical staff work together to offer 
+            personalized care across various specialties, 
+            including Diabetology, Orthopedics, and Pediatrics. 
+            With state-of-the-art facilities, we are committed to delivering 
+            accurate diagnoses and effective solutions tailored 
+            to each patient's needs. At JASS Hospital, 
+            we prioritize compassionate care and aim to enhance 
+            the health and quality of life of every patient, 
+            all in a comfortable and trusted environment.
+          </p>
+        </div>
+        <div class="about-img">
+          <img src="./assets/about.jpeg" alt="About us" />
+        </div>
+      </section>
+
+      <section class="section-container whyUs-container">
+        <div class="whyUs-img">
+          <img src="./assets/whyUs.jpg" alt="Why Choose Us" />
+        </div>
+        <div class="whyUs-content">
+          <h2 class="section-header">Why Choose Us?</h2>
+          <p>
+            Choose JASS Hospital for expert care, effective treatments, 
+            personalized treatments, and a compassionate approach 
+            to your health and well-being.
+          </p>
+          <div class="features">
+            <span><i class="fa-solid fa-user-doctor"></i></span>
+            <div>
+              <h4>Inpatient care</h4>
+              <p>
+                We provide Inpatient care to the patients whose condition
+                requires admission to a hospital
+              </p>
+            </div>
+            <span><i class="fa-solid fa-hospital"></i></span>
+            <div>
+              <h4>24/7 Hospital</h4>
+              <p>
+                We offer 24/7 medical support and experienced medical services round the clock.
+              </p>
+            </div>
+            <span><i class="fa-solid fa-suitcase-medical"></i></span>
+            <div>
+              <h4>Medical and Surgical</h4>
+              <p>
+                Our Medical and Surgical services offer advanced healthcare
+                solutions to address medical needs.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="section-container footer-container">
+        <p>
+          &copy; 2024 All Rights Reserved By
+          <a href="https://g.co/kgs/6sPv2cs">JASS IT DEPT</a>
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
